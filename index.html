@@ -1,3 +1,83 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Week 4 starter preview</title><link rel="stylesheet" href="week4/css/styles.css"></head>
-<body><main><h1>Week 4 starter preview</h1><p>This page only previews the starter. In your course project, keep your existing homepage and copy the <code>week4</code> folder beside it.</p><p><a href="week4/3d.html">Open the Babylon.js scene</a></p><p>Add that same link to your own homepage. Your chosen pathway supplies the content for your website.</p></main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Iceberg Incorporated — exploring what lies above and below the surface.">
+  <title>Iceberg Incorporated | Beyond the Surface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Iceberg Incorporated home">
+      <span class="brand-mark">ICE</span>
+      <span>ICEBERG<br><small>INCORPORATED</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">What We Do</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-experience" href="3d.html">3D Experience</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">EST. 2026 · COLD THINKING / BOLD IDEAS</p>
+        <h1 id="hero-title">There’s more<br><em>beneath</em> the surface.</h1>
+        <p class="hero-text">Iceberg Incorporated turns complex ideas into clear, memorable experiences. Explore the company, then dive into our interactive 3D world.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="3d.html">Explore the 3D Experience <span>↗</span></a>
+          <a class="text-link" href="#about">Discover Iceberg ↓</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="mini-iceberg above"></div>
+        <div class="mini-iceberg below"></div>
+        <div class="water-line"></div>
+        <span class="depth-label top-label">10% VISIBLE</span>
+        <span class="depth-label bottom-label">90% UNSEEN</span>
+      </div>
+    </section>
+
+    <section class="statement" id="about">
+      <p class="section-kicker">01 / THE IDEA</p>
+      <div>
+        <h2>Small at first glance.<br><span>Massive underneath.</span></h2>
+        <p>Iceberg Incorporated is built around one simple idea: the most interesting things are rarely the most obvious. We combine design, technology, and interactive storytelling to reveal the layers beneath a surface.</p>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="section-kicker">02 / WHAT WE DO</p>
+        <h2 id="services-title">Built below<br>the surface.</h2>
+      </div>
+      <div class="service-grid">
+        <article><span>01</span><h3>Experience Design</h3><p>Digital experiences that invite people to explore, interact, and stay curious.</p></article>
+        <article><span>02</span><h3>3D Worlds</h3><p>Immersive environments that turn a simple screen into somewhere worth visiting.</p></article>
+        <article><span>03</span><h3>Clear Ideas</h3><p>Strong visual systems and storytelling that make complicated subjects easier to understand.</p></article>
+      </div>
+    </section>
+
+    <section class="experience-banner" aria-labelledby="experience-title">
+      <div>
+        <p class="section-kicker">03 / GO DEEPER</p>
+        <h2 id="experience-title">Meet the iceberg.</h2>
+        <p>Take control of the camera and explore an iceberg above and below the waterline.</p>
+      </div>
+      <a class="circle-button" href="3d.html" aria-label="Open the 3D iceberg experience">ENTER<br>3D ↗</a>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-kicker">04 / CONTACT</p>
+      <h2>Have an idea<br>under the surface?</h2>
+      <a href="mailto:hello@iceberginc.example">hello@iceberginc.example</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>ICEBERG INCORPORATED</span><span>KEEP EXPLORING.</span></footer>
+</body>
+</html>

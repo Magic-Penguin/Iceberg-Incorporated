@@ -3,22 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Week 4 — My 3D view</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Iceberg Incorporated | 3D Experience</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="experience-page">
   <main>
-    <a href="../index.html">← Return to my website</a>
-    <h1>My 3D view</h1>
-    <p id="scene-description">A sphere stands on a flat ground plane. Replace this description with an accurate explanation of your customized scene.</p>
-    <p id="scene-status" role="status">Loading the scene…</p>
-    <canvas id="renderCanvas" tabindex="0" aria-label="Interactive 3D practice scene" aria-describedby="scene-description scene-controls">The practice scene contains a sphere and a ground plane.</canvas>
-    <p id="scene-controls">Drag in the scene to look around. With the scene focused, use the arrow keys to move the camera. Press Tab to leave the scene. The Reset view button restores the starting camera.</p>
-    <button id="reset-view" type="button" disabled>Reset view</button>
-    <noscript><p>JavaScript is disabled. Enable it to run the coding exercise, or ask your instructor for the supported lab route. The written scene description remains available.</p></noscript>
+    <a class="back-link" href="index.html">← Return to Iceberg Incorporated</a>
+    <header class="experience-header">
+      <div>
+        <p class="section-kicker">INTERACTIVE EXPERIENCE</p>
+        <h1>Meet the<br>iceberg.</h1>
+      </div>
+      <p id="scene-description">Explore a stylized iceberg from above and below the waterline. Drag to look around and use the camera controls to discover the hidden mass beneath the surface.</p>
+    </header>
+    <p id="scene-status" role="status">Loading the iceberg experience…</p>
+    <section class="scene-shell" aria-label="Interactive iceberg scene">
+      <div class="scene-wrap">
+        <canvas id="renderCanvas" tabindex="0" aria-label="Interactive 3D iceberg scene" aria-describedby="scene-description scene-controls">The interactive scene contains an iceberg, ocean, sky, and underwater volume.</canvas>
+      </div>
+    </section>
+    <div class="scene-info">
+      <p id="scene-controls" class="controls">Drag to look around. Use the arrow keys to move the camera. Press Tab to leave the scene.</p>
+      <button id="reset-view" class="reset-button" type="button" disabled>Reset view</button>
+    </div>
+    <noscript><p>JavaScript is disabled. Enable it to run the interactive iceberg experience.</p></noscript>
   </main>
-  <!-- The canvas exists before the engine and your script load. -->
-  <script src="vendor/babylon.js"></script>
-  <script src="js/app.js"></script>
+  <script src="babylon.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
